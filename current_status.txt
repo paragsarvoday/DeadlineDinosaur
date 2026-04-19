@@ -1,0 +1,11 @@
+The image resolution used for training does gradually increasing as the training progresses. But just this resolution scaling does not seem to provide any gains as of now.
+Rather makes the vanilla implementation give out bit worse results (about 1 PSNR less).
+
+Things to implement:
+
+1. Adapt the rate of Gaussian densification to match the resolution scaling.
+2. The positional learning rate should obviously be high when the low resolution frames are being for training. Not happening right now. Then it should start to decay only 
+after the full resolution has been reached.
+
+
+There is something definitely wrong with the ```densify_until``` variable.

@@ -1,0 +1,3 @@
+recursive-include deadlinedino/submodules/fused_ssim *.h
+recursive-include deadlinedino/submodules/simple-knn *.h
+recursive-include deadlinedino/submodules/gaussian_raster *.h
